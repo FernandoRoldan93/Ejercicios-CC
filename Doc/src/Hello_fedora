@@ -1,0 +1,8 @@
+# Seleccionamos imagen base
+FROM fedora:latest
+
+# Copiamos el script dentro del contenedor
+COPY hello-world.sh hello-world.sh
+
+# Corremos el script
+RUN ["sh", "hello-world.sh"]
